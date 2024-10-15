@@ -1,0 +1,48 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "doc name hello!",
+  "documentNamespace": "what should namespace be for ACS produced sboms?",
+  "creationInfo": {
+    "creators": [
+      "Tool: StackRox-1.2.3"
+    ],
+    "created": "2024-10-15T22:18:54Z"
+  },
+  "packages": [
+    {
+      "name": "glibc",
+      "SPDXID": "SPDXRef-Package",
+      "versionInfo": "2.11.1",
+      "packageFileName": "glibc-2.11.1.tar.gz",
+      "supplier": "Person: Jane Doe (jane.doe@example.com)",
+      "originator": "Organization: ExampleCodeInspect (contact@example.com)",
+      "downloadLocation": "http://ftp.gnu.org/gnu/glibc/glibc-ports-2.15.tar.gz",
+      "filesAnalyzed": false,
+      "homepage": "http://ftp.gnu.org/gnu/glibc",
+      "sourceInfo": "uses glibc-2_11-branch from git://sourceware.org/git/glibc.git.",
+      "copyrightText": "Copyright 2008-2010 John Smith",
+      "summary": "GNU C library.",
+      "description": "The GNU C Library defines functions that are specified by the ISO C standard, as well as additional features specific to POSIX and other derivatives of the Unix operating system, and extensions specific to GNU systems.",
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:pivotal_software:spring_framework:4.1.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "attributionTexts": [
+        "The GNU C Library is free software.  See the file COPYING.LIB for copying conditions, and LICENSES for notices about a few contributions that require these additional notices to be distributed.  License copyright years may be listed using range notation, e.g., 1996-2015, indicating that every year in the range, inclusive, is a copyrightable year that would otherwise be listed individually."
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "comment": "A relationship comment"
+    }
+  ]
+}
