@@ -7,3 +7,17 @@ See the output in:
 - [poc.spdx.json](poc.spdx.json)
 - [poc.spdx.tv](poc.spdx.tv)
 - [poc.spdx.yaml](poc.spdx.yaml)
+
+## running
+
+```
+go run .
+```
+
+Output:
+
+```
+Wrote: poc.spdx.json
+Wrote: poc.spdx.yaml
+Wrote: poc.spdx.tv
+```
